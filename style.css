@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+body,html {
+    margin:0;
+    padding:0;
+    background-color: black;
+    color: white;
+}
+/* HEADER */
+.container {
+    max-width: 1300px;
+    height: 815px;
+    border: 1px solid white;
+    font-size: 13px;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: greenyellow;
+    outline: 1px solid white; 
+    text-overflow: ellipsis;
+} 
+/* LOGO */
+.logo {
+    display: block;
+    position: absolute;
+}
+/* LINE MENU */
+.mainMenu {
+    position: relative;
+}
+/* COLUNM MENU */
+.colunmMenu {
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+}
+
+/* SEARCH */
+.search-container{
+    width: 100%;
+    display: block;
+    background-color: transparent;
+}
+input#search-bar{
+    text-align: right;
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 13px;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    background-color: transparent;
+}
+#search-bar:focus{
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.35s ease;
+    color: greenyellow;
+}
+#search-bar::-webkit-input-placeholder{
+    transition: opacity 0.45s ease; 
+    color:white;
+}
+#search-bar::-moz-placeholder {
+    transition: opacity 0.45s ease; 
+    opacity: 0;
+}
+#search-bar:-ms-placeholder {
+    transition: opacity 0.45s ease; 
+    opacity: 0;
+}
+/* MAIN  */
+main {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+main>img {
+    border: 2px solid white;
+    align-items: flex-end;
+}
+h1 {
+    text-align: right;  
+}
+/* LOOKBOOK */
+.gallery {
+    text-align: center;
+}
+/* CONTATO */
+.contato h2{
+    font-size: 9rem;
+    text-align: center;
+}
+.contato {
+    height: auto;
+    margin: 0 auto;
+    font-size: 13px;
+    position: relative;
+    text-align: right;
+}
+.contato label {
+    margin: 10px;
+}
+.contato input, .contato textarea {
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    text-align: right;
+}
+.contato input:focus, .contato textarea:focus {
+    border-color: white;
+    transition: 0.35s ease;
+    color: black;
+}
+.contato input:hover, .contato textarea:hover {
+    background-color:greenyellow;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.btn {
+    text-align: right; 
+}
+.form-control {
+    color:greenyellow;
+}
+/* SOBRE */
+.sobre {
+    border: 1px solid white;
+    margin: 15px;
+    padding: 15px;
+}
+.sobre:hover {
+    border: 2px solid white;
+    height: auto;
+}
+.sobre h2 {
+    font-size: 14px;
+    text-align: center;
+}
+.sobre h2:hover {
+    text-shadow: 2px 70px 2px magenta;
+    position: relative;
+    word-wrap: break-word;
+    overflow: scroll;
+}
+/* FOOTER */
+footer {
+    border: 1px solid rgb(255, 255, 255);
+}
+/* MARQUEE */
+marquee {
+    background-color: greenyellow;
+    color: black;
+}
+
+/* QUERIES  */
+@media (min-width: 1000px) {
+    /* HEADER */
+    .container {
+        max-width: 1300px;
+        border: 1px solid white;
+    }
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+    }
+}
