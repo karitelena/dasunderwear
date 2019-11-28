@@ -22,7 +22,7 @@
                         <a class="nav-link" href="shop.html">SHOP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="enter.php">ENTER</a>
+                        <a class="nav-link" href="#">ENTER</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CART(0)</a>
@@ -59,10 +59,49 @@
             </div>
         </div>
         <div>
-            <main>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img class="w-100 h-auto embed-responsive-item" src="./img/home.gif" alt="">
-                </div>
+            <main class="enter" >
+                <section class="row">
+                    <form class="col" method="POST" enctype="multipart/form-data">
+                        <h1 class="p-3 mt-82 ml-1000">LOGIN</h1>
+                        <div class="form-group">
+                            <label for="nome">NOME</label>
+                            <input name="nome" type="text" class="form-control" id="nome" style="text-transform:uppercase" required>
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL </label>
+                            <input name="email" type="email" class="form-control" id="email" style="text-transform:uppercase" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">SENHA</label>
+                            <input name="senha" type="password" class="form-control" id="senha" required>
+                            <a href="login.php" id="jaCadastrado" class="form-text text-muted">Já é cadastrado? Faça o login!</a>
+                        </div>
+                        
+                            <button type="submit" class="btn btn-outline-light btn-block">ENTER</button>
+                    </form>
+                </section>
+                <section class="row" >
+                    <form class="col" method="POST" enctype="multipart/form-data">
+                        <h1 class="p-3 mt-82 ml-1000">CADASTRE-SE</h1>
+                        <div class="form-group">
+                            <label for="nome">NOME</label>
+                            <input name="nome" type="text" class="form-control" id="nome" style="text-transform:uppercase" required>
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL </label>
+                            <input name="email" type="email" class="form-control" id="email" style="text-transform:uppercase" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">SENHA</label>
+                            <input name="senha" type="password" class="form-control" id="senha" required>
+                            <a href="login.php" id="jaCadastrado" class="form-text text-muted">Já é cadastrado? Faça o login!</a>
+                        </div>
+                        
+                            <button type="submit" class="btn btn-outline-light btn-block">ENTER</button>
+                    </form>
+                </section>
             </main>
         </div>
         <div>
@@ -74,7 +113,6 @@
                 </div>    
             </footer>
         </div>
-        <marquee behavior="scroll" direction="left">@2019 DAS UNDERWEAR</marquee>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

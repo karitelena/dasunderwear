@@ -20,16 +20,16 @@ a {
 a:hover {
     color: greenyellow;
     outline: 1px solid white; 
-    text-overflow: ellipsis;
 } 
 /* LOGO */
 .logo {
     display: block;
     position: absolute;
 }
-/* LINE MENU */
+/* MAIN MENU */
 .mainMenu {
     position: relative;
+    margin: 0;
 }
 /* COLUNM MENU */
 .colunmMenu {
@@ -37,7 +37,57 @@ a:hover {
     padding: 0;
     border: 1px solid white;
 }
+/* SIDE MENU */
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 13px;
+    outline: 1px solid white;
+  }
+  .sidenav span {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+  }
+.sidenavSpan:hover {
+    outline: 1px solid white;
+    color: greenyellow;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: greenyellow;
+  }
+  
+  .sidenav .closebtn {
+    padding:10px;
+    margin:0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 /* SEARCH */
 .search-container{
     width: 100%;
@@ -119,7 +169,7 @@ h1 {
     color: black;
 }
 .contato input:hover, .contato textarea:hover {
-    background-color:greenyellow;
+    background-color:white;
 }
 button {
     margin: 0;
@@ -139,7 +189,7 @@ button {
     padding: 15px;
 }
 .sobre:hover {
-    border: 2px solid white;
+    outline: 2px solid white;
     height: auto;
 }
 .sobre h2 {
@@ -151,6 +201,35 @@ button {
     position: relative;
     word-wrap: break-word;
     overflow: scroll;
+}
+/* ENTER */
+.enter h2{
+    text-align: center;
+}
+.enter {
+    height: auto;
+    margin: 0 auto;
+    font-size: 13px;
+    position: relative;
+    text-align: right;
+}
+.enter label {
+    margin: 10px;
+}
+.enter input, .enter textarea {
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    text-align: right;
+}
+.enter input:hover, .enter textarea:hover {
+    background-color:white;
+}
+.enter input:focus, .enter textarea:focus {
+    border-color: white;
+    transition: 0.35s ease;
+    color: black;
 }
 /* FOOTER */
 footer {
