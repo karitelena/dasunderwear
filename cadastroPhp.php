@@ -1,3 +1,9 @@
+<?php 
+
+echo '<link rel="stylesheet" href="./style.css">';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,7 +28,32 @@
                         <a class="nav-link" href="shop.html">SHOP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ENTER</a>
+                        <div id="myEnternav" class="enternav nav-item">
+                            <form action="POST">
+                                <a href="javascript:void(0)" class="closebtnEnter" onclick="closeEnternav()">&times;</a>
+                                    <h1 class="text-left p-2" >LOGIN</h1>
+                                    <div class="form-group">
+                                        <label for="email">EMAIL </label>
+                                        <input name="email" type="email" class="form-control" id="email" style="text-transform:uppercase" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senha">SENHA</label>
+                                        <input name="senha" type="password" class="form-control" id="senha" required>
+                                        <a href="cadastro.html" id="naoCadastrado" class="form-text text-light p-2">AINDA NÃO É CADASTRADO?</a>
+                                    </div>
+                                    <button type="submit" style="height: 400px" class="btn btn-outline-light btn-block text-left">ENTER ;)</button>
+                            </form>
+                        </div>
+                        <span class="nav-link enternavSpan" style="font-size:13px;cursor:pointer" onclick="openEnternav()">ENTER</span>
+                        <script>
+                            function openEnternav() {
+                                document.getElementById("myEnternav").style.width = "350px";
+                            }
+                            
+                            function closeEnternav() {
+                                document.getElementById("myEnternav").style.width = "0";
+                            }
+                        </script>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CART(0)</a>
@@ -59,49 +90,26 @@
             </div>
         </div>
         <div>
-            <main class="enter" >
-                <section class="row">
-                    <form class="col" method="POST" enctype="multipart/form-data">
-                        <h1 class="p-3 mt-82 ml-1000">LOGIN</h1>
-                        <div class="form-group">
-                            <label for="nome">NOME</label>
-                            <input name="nome" type="text" class="form-control" id="nome" style="text-transform:uppercase" required>
-                        
-                        </div>
-                        <div class="form-group">
-                            <label for="email">EMAIL </label>
-                            <input name="email" type="email" class="form-control" id="email" style="text-transform:uppercase" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="senha">SENHA</label>
-                            <input name="senha" type="password" class="form-control" id="senha" required>
-                            <a href="login.php" id="jaCadastrado" class="form-text text-muted">Já é cadastrado? Faça o login!</a>
-                        </div>
-                        
+            <main>
+                <div class="cadastro">
+                    <section>
+                        <form method="POST" enctype="multipart/form-data">
+                            <h1 class="p-3 mt-82 ml-1000">CADASTRE-SE</h1>
+                            <div class="form-group">
+                                <label for="nome">NOME</label>
+                                <input name="nome" type="text" class="form-control" id="nome" style="text-transform:uppercase"> 
+                            </div>
+                            <div class="form-group">
+                                <label for="email">EMAIL </label>
+                                <input name="email" type="email" class="form-control" id="email" style="text-transform:uppercase">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">SENHA</label>
+                                <input name="senha" type="password" class="form-control" id="senha">                        </div>
                             <button type="submit" class="btn btn-outline-light btn-block">ENTER</button>
-                    </form>
-                </section>
-                <section class="row" >
-                    <form class="col" method="POST" enctype="multipart/form-data">
-                        <h1 class="p-3 mt-82 ml-1000">CADASTRE-SE</h1>
-                        <div class="form-group">
-                            <label for="nome">NOME</label>
-                            <input name="nome" type="text" class="form-control" id="nome" style="text-transform:uppercase" required>
-                        
-                        </div>
-                        <div class="form-group">
-                            <label for="email">EMAIL </label>
-                            <input name="email" type="email" class="form-control" id="email" style="text-transform:uppercase" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="senha">SENHA</label>
-                            <input name="senha" type="password" class="form-control" id="senha" required>
-                            <a href="login.php" id="jaCadastrado" class="form-text text-muted">Já é cadastrado? Faça o login!</a>
-                        </div>
-                        
-                            <button type="submit" class="btn btn-outline-light btn-block">ENTER</button>
-                    </form>
-                </section>
+                        </form>
+                    </section>
+                </div>
             </main>
         </div>
         <div>

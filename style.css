@@ -37,8 +37,71 @@ a:hover {
     padding: 0;
     border: 1px solid white;
 }
-/* SIDE MENU */
-
+/* ENTERNAV */
+.enternav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 13px;
+    outline: 1px solid white;
+}
+.enternav label {
+    margin: 10px;
+}
+.enternav input {
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    text-align: left;
+}
+.enternav input:focus {
+    border-color: white;
+    transition: 0.35s ease;
+    color: black;
+}
+.enternav span {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: relative;
+    transition: 0.3s;
+}
+.enternavSpan:hover {
+    outline: 1px solid white;
+    color: greenyellow;
+}
+.enternav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.enternav a:hover {
+    color: greenyellow;
+}
+  
+.enternav .closebtnEnter {
+    padding:10px;
+    margin:0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* SIDENAV */
 .sidenav {
     height: 100%;
     width: 0;
@@ -54,7 +117,7 @@ a:hover {
     font-size: 13px;
     outline: 1px solid white;
   }
-  .sidenav span {
+.sidenav span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     color: white;
@@ -66,7 +129,7 @@ a:hover {
     outline: 1px solid white;
     color: greenyellow;
   }
-  .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     color: white;
@@ -74,11 +137,11 @@ a:hover {
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
+.sidenav a:hover {
     color: greenyellow;
   }
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     padding:10px;
     margin:0;
     display: block;
@@ -87,7 +150,7 @@ a:hover {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 /* SEARCH */
 .search-container{
     width: 100%;
@@ -142,10 +205,6 @@ h1 {
     text-align: center;
 }
 /* CONTATO */
-.contato h2{
-    font-size: 9rem;
-    text-align: center;
-}
 .contato {
     height: auto;
     margin: 0 auto;
@@ -231,9 +290,36 @@ button {
     transition: 0.35s ease;
     color: black;
 }
+/* CADASTRO */
+.cadastro {
+    height: auto;
+    margin: 0 auto;
+    font-size: 13px;
+    position: relative;
+    text-align: right;
+}
+.cadastro label {
+    margin: 10px;
+}
+.cadastro input, .cadastro textarea {
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+    text-align: right;
+}
+.cadastro input:hover, .cadastro textarea:hover {
+    background-color:white;
+}
+.cadastro input:focus, .cadastro textarea:focus {
+    border-color: white;
+    transition: 0.35s ease;
+    color: black;
+}
 /* FOOTER */
 footer {
     border: 1px solid rgb(255, 255, 255);
+
 }
 /* MARQUEE */
 marquee {
