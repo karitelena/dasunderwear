@@ -4,22 +4,29 @@
 body,html {
     margin:0;
     padding:0;
-    background-color: black;
-    color: white;
+    background-color: #dbdbdb; 
+    /* background-color: white; */
+    color:black;
+    font-family: 'Courier New', Courier, monospace
 }
 /* HEADER */
 .container {
     max-width: 1300px;
     height: 815px;
-    border: 1px solid white;
+    border: 1px solid black;
     font-size: 13px;
+    background-color:white;
 }
-a {
-    color: white;
+.navMenu a {
+    color: black;
 }
-a:hover {
-    color: greenyellow;
-    outline: 1px solid white; 
+.navMenu a:hover {
+    outline: 1px solid black;
+    color: #BB3FB0; 
+}
+#header button:hover {
+    outline: 1px solid black;
+    color: #BB3FB0; 
 } 
 /* LOGO */
 .logo {
@@ -35,7 +42,7 @@ a:hover {
 .colunmMenu {
     margin: 0;
     padding: 0;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 /* ENTERNAV */
 .enternav {
@@ -48,47 +55,50 @@ a:hover {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #dbdbdb;
+    color: black;
     font-size: 13px;
-    outline: 1px solid white;
+    outline: 1px solid black;
 }
 .enternav label {
     margin: 10px;
 }
 .enternav input {
-    padding: 0;
-    background-color: transparent;
-    border: 1px solid white;
+    background-color:transparent;
+    padding: 0; 
+    border: 1px solid black;
     border-radius: 0;
     text-align: left;
 }
+.enternav input:hover {
+    background-color: #BB3FB0;
+}
 .enternav input:focus {
-    border-color: white;
+    border-color: black;
     transition: 0.35s ease;
-    color: black;
+    color: white;
 }
 .enternav span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     position: relative;
     transition: 0.3s;
 }
 .enternavSpan:hover {
-    outline: 1px solid white;
-    color: greenyellow;
+    outline: 1px solid black;
+    color: #BB3FB0;
 }
 .enternav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     transition: 0.3s;
 }
 .enternav a:hover {
-    color: greenyellow;
+    color: #BB3FB0;
 }
   
 .enternav .closebtnEnter {
@@ -98,7 +108,7 @@ a:hover {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 26px;
     margin-left: 50px;
 }
 /* SIDENAV */
@@ -113,32 +123,33 @@ a:hover {
     transition: 0.5s;
     padding-top: 60px;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: black;
     font-size: 13px;
-    outline: 1px solid white;
+    outline: 1px solid black;
+    background-color: #dbdbdb;
   }
 .sidenav span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     position: relative;
     transition: 0.3s;
   }
 .sidenavSpan:hover {
-    outline: 1px solid white;
-    color: greenyellow;
+    outline: 1px solid black;
+    color: #BB3FB0;
   }
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     transition: 0.3s;
   }
   
 .sidenav a:hover {
-    color: greenyellow;
+    color: #BB3FB0;
   }
   
 .sidenav .closebtn {
@@ -148,7 +159,7 @@ a:hover {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 26px;
     margin-left: 50px;
 }
 /* SEARCH */
@@ -169,13 +180,13 @@ input#search-bar{
     background-color: transparent;
 }
 #search-bar:focus{
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid black;
     transition: 0.35s ease;
-    color: greenyellow;
+    color:#BB3FB0;
 }
 #search-bar::-webkit-input-placeholder{
     transition: opacity 0.45s ease; 
-    color:white;
+    color: black;
 }
 #search-bar::-moz-placeholder {
     transition: opacity 0.45s ease; 
@@ -187,24 +198,28 @@ input#search-bar{
 }
 /* MAIN  */
 main {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     position: relative;
     width: 100%;
     height: auto;
 }
 main>img {
-    border: 2px solid white;
+    border: 2px solid black;
     align-items: flex-end;
 }
-h1 {
-    text-align: right;  
+main h1 {
+    text-align: right;
+    font-size:18px;  
 }
 /* LOOKBOOK */
 .gallery {
     text-align: center;
 }
 /* CONTATO */
+.contato h2 {
+    font-size:14px;
+}
 .contato {
     height: auto;
     margin: 0 auto;
@@ -218,37 +233,41 @@ h1 {
 .contato input, .contato textarea {
     padding: 0;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 0;
     text-align: right;
 }
 .contato input:focus, .contato textarea:focus {
-    border-color: white;
+    border-color: black;
     transition: 0.35s ease;
-    color: black;
+    color: white;
 }
 .contato input:hover, .contato textarea:hover {
-    background-color:white;
+    background-color:#BB3FB0;
 }
 button {
     margin: 0;
     padding: 0;
     border-radius: 0;
 }
-.btn {
+.contato .btn {
     text-align: right; 
+    border: 1px solid black;
+}
+.contato .btn:hover {
+    color:#BB3FB0;
 }
 .form-control {
-    color:greenyellow;
+    color:#BB3FB0;
 }
 /* SOBRE */
 .sobre {
-    border: 1px solid white;
+    border: 1px solid black;
     margin: 15px;
     padding: 15px;
 }
 .sobre:hover {
-    outline: 2px solid white;
+    outline: 1px solid black;
     height: auto;
 }
 .sobre h2 {
@@ -256,40 +275,12 @@ button {
     text-align: center;
 }
 .sobre h2:hover {
-    text-shadow: 2px 70px 2px magenta;
+    text-shadow: 2px 70px 2px #BB3FB0;
     position: relative;
     word-wrap: break-word;
     overflow: scroll;
 }
-/* ENTER */
-.enter h2{
-    text-align: center;
-}
-.enter {
-    height: auto;
-    margin: 0 auto;
-    font-size: 13px;
-    position: relative;
-    text-align: right;
-}
-.enter label {
-    margin: 10px;
-}
-.enter input, .enter textarea {
-    padding: 0;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0;
-    text-align: right;
-}
-.enter input:hover, .enter textarea:hover {
-    background-color:white;
-}
-.enter input:focus, .enter textarea:focus {
-    border-color: white;
-    transition: 0.35s ease;
-    color: black;
-}
+
 /* CADASTRO */
 .cadastro {
     height: auto;
@@ -304,27 +295,61 @@ button {
 .cadastro input, .cadastro textarea {
     padding: 0;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 0;
     text-align: right;
 }
 .cadastro input:hover, .cadastro textarea:hover {
-    background-color:white;
+    background-color:#BB3FB0;
 }
 .cadastro input:focus, .cadastro textarea:focus {
-    border-color: white;
+    border-color: black;
     transition: 0.35s ease;
     color: black;
 }
+.cadastro .btn {
+    text-align: right; 
+    border: 1px solid black;
+}
+.cadastro .btn:hover {
+    color:#BB3FB0;
+}
+/* SHOP */
+.shop a:link {
+    text-decoration: none;
+}
+.shop a:hover {
+    outline: 1px solid black;
+}
+.shop h1 {
+    font-size: 18px !important;
+}
+.shop h4 {
+    font-size: 15px;
+    color:black;
+}
+
+.shop h1:hover, .shop h4:hover {
+    color:#BB3FB0;
+    text-decoration: none;
+}
 /* FOOTER */
 footer {
-    border: 1px solid rgb(255, 255, 255);
-
+    border: 1px solid black;
+}
+footer a {
+    color: black;
+}
+footer a:hover {
+    color: #BB3FB0;
 }
 /* MARQUEE */
 marquee {
-    background-color: greenyellow;
+    background-color: transparent;
     color: black;
+    height: auto;
+    padding:0;
+    margin: 0;
 }
 
 /* QUERIES  */
@@ -332,7 +357,7 @@ marquee {
     /* HEADER */
     .container {
         max-width: 1300px;
-        border: 1px solid white;
+        border: 1px solid black;
     }
     /* FOOTER */
     .footer {
